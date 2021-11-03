@@ -1636,17 +1636,12 @@ textarea {
 
 .nm-scroller {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   & .nm-scroller-nav {
     display: flex;
     align-items: center;
-    margin: 30px 0;
+    padding: 0 50px;
     z-index: 2;
-    @media (max-width: 992px) {
-      width: 100%;
-      justify-content: center;
-    }
     & .nm-scroller-left,
     & .nm-scroller-right {
       width: 25px;
@@ -1670,7 +1665,6 @@ textarea {
     margin: 0 20px;
     & .nm-scroller-cur-page,
     & .nm-scroller-total-pages {
-      padding: 20px 14px;
       font: $font-menu;
       line-height: 1.1rem;
     }
