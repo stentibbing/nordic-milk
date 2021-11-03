@@ -1,15 +1,9 @@
 <?php
 /**
  * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package Nordic_Milk
  */
-
 ?>
+
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -45,8 +39,6 @@
 	<div class="scroll-down"><div class="scroll-down-text">scroll</div><div class="scroll-down-arrow"></div></div>
 
 	<header id="masthead" class="site-header">
-
-		
 		
 		<div class="site-branding">
 			<?php
