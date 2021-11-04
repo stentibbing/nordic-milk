@@ -1593,7 +1593,7 @@ textarea {
 
 .nm-scroller {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   & .nm-scroller-nav {
     display: flex;
     align-items: center;
