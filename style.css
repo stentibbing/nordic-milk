@@ -1828,14 +1828,14 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 50px 0 0;
+  padding: 0 30px 0 0;
   z-index: 2;
 }
 
 .nm-scroller .nm-scroller-nav .nm-scroller-left,
 .nm-scroller .nm-scroller-nav .nm-scroller-right {
-  width: 25px;
-  height: 15px;
+  width: 30px;
+  height: 20px;
   background-image: url(./img/pagination_arrow.svg);
   background-position: center;
   background-size: contain;
@@ -1859,13 +1859,14 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 20px;
+  margin: 0 10px 5px 10px;
 }
 
 .nm-scroller .nm-scroller-page-number .nm-scroller-cur-page,
 .nm-scroller .nm-scroller-page-number .nm-scroller-total-pages {
   font: bold 1.3rem Bison, cursive;
-  line-height: 1.1rem;
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .scroll-down {

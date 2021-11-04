@@ -1597,12 +1597,12 @@ textarea {
   & .nm-scroller-nav {
     display: flex;
     align-items: center;
-    padding: 0 50px 0 0;
+    padding: 0 30px 0 0;
     z-index: 2;
     & .nm-scroller-left,
     & .nm-scroller-right {
-      width: 25px;
-      height: 15px;
+      width: 30px;
+      height: 20px;
       background-image: url(./img/pagination_arrow.svg);
       background-position: center;
       background-size: contain;
@@ -1619,11 +1619,12 @@ textarea {
   & .nm-scroller-page-number {
     display: flex;
     align-items: center;
-    margin: 0 20px;
+    margin: 0 10px 5px 10px;
     & .nm-scroller-cur-page,
     & .nm-scroller-total-pages {
       font: $font-menu;
-      line-height: 1.1rem;
+      font-size: 3rem;
+      line-height: 1;
     }
   }
 }
