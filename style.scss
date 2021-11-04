@@ -1589,49 +1589,6 @@ textarea {
   display: none;
 }
 
-// --- Pagination on home page ---
-
-.nm-pagination-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.wpb_content_element.nm-pagination {
-  margin: 0;
-  & .wpb_wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-  & .nm-pagination-left,
-  & .nm-pagination-right {
-    width: 25px;
-    height: 15px;
-    background-image: url(./img/pagination_arrow.svg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-  }
-  & .nm-pagination-left {
-    transform: rotate(180deg);
-  }
-}
-
-.nm-paginated-texts {
-  transition: height 0.3s ease-in-out;
-  overflow: hidden;
-}
-
-.nm-pagination-number {
-  padding: 20px 14px;
-  font: $font-menu;
-  line-height: 1.1rem;
-}
-
 // --- Home page scroller ---
 
 .nm-scroller {

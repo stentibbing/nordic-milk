@@ -1812,63 +1812,6 @@ h2 {
   display: none;
 }
 
-.nm-pagination-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wpb_content_element.nm-pagination {
-  margin: 0;
-}
-
-.wpb_content_element.nm-pagination .wpb_wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.wpb_content_element.nm-pagination .nm-pagination-left,
-.wpb_content_element.nm-pagination .nm-pagination-right {
-  width: 25px;
-  height: 15px;
-  background-image: url(./img/pagination_arrow.svg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-
-.wpb_content_element.nm-pagination .nm-pagination-left {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.nm-paginated-texts {
-  -webkit-transition: height 0.3s ease-in-out;
-  transition: height 0.3s ease-in-out;
-  overflow: hidden;
-}
-
-.nm-pagination-number {
-  padding: 20px 14px;
-  font: bold 1.3rem Bison, cursive;
-  line-height: 1.1rem;
-}
-
 .nm-scroller {
   display: -webkit-box;
   display: -ms-flexbox;
