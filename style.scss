@@ -1693,3 +1693,22 @@ textarea {
   font: $font-content;
   font-weight: 700;
 }
+
+//--- NM Timeline styles ---
+
+.nm-timeline {
+  .nmt-side-first-date,
+  .nmt-side-last-date {
+    font: $font-menu;
+  }
+  .nmt-side-slider-label {
+    font: $font-menu;
+    font-size: 2rem;
+  }
+  .nmt-content-title {
+    margin-top: 0;
+    font: $font-content;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+}

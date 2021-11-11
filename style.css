@@ -1984,4 +1984,21 @@ h2 {
   font: 300 1rem/1.5rem "Epilogue", sans-serif;
   font-weight: 700;
 }
+
+.nm-timeline .nmt-side-first-date,
+.nm-timeline .nmt-side-last-date {
+  font: bold 1.3rem Bison, cursive;
+}
+
+.nm-timeline .nmt-side-slider-label {
+  font: bold 1.3rem Bison, cursive;
+  font-size: 2rem;
+}
+
+.nm-timeline .nmt-content-title {
+  margin-top: 0;
+  font: 300 1rem/1.5rem "Epilogue", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
 /*# sourceMappingURL=style.css.map */
