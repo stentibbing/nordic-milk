@@ -1701,6 +1701,9 @@ textarea {
   .nmt-side-last-date {
     font: $font-menu;
   }
+  .nmt-side-slider-point {
+    visibility: hidden;
+  }
   .nmt-side-slider-label {
     font: $font-menu;
     font-size: 2rem;

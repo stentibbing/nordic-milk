@@ -1990,6 +1990,10 @@ h2 {
   font: bold 1.3rem Bison, cursive;
 }
 
+.nm-timeline .nmt-side-slider-point {
+  visibility: hidden;
+}
+
 .nm-timeline .nmt-side-slider-label {
   font: bold 1.3rem Bison, cursive;
   font-size: 2rem;
