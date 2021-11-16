@@ -1210,6 +1210,10 @@ nav#menu-footer {
 h3.products-heading {
   padding: 0 0 0 31px;
   font: $font-menu;
+  @media (max-width: 767px) {
+    padding: 0;
+    font-size: 2.5rem;
+  }
 }
 
 ul.nm-products-list {
@@ -1222,6 +1226,14 @@ ul.nm-products-list {
     &.highlight,
     &:hover {
       color: $color-highlight;
+    }
+  }
+  @media (max-width: 767px) {
+    padding: 0;
+    border: none;
+    & li.nm-product {
+      font-size: 1.2rem;
+      line-height: 2rem;
     }
   }
 }

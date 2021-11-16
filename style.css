@@ -1307,6 +1307,13 @@ h3.products-heading {
   font: bold 1.3rem Bison, cursive;
 }
 
+@media (max-width: 767px) {
+  h3.products-heading {
+    padding: 0;
+    font-size: 2.5rem;
+  }
+}
+
 ul.nm-products-list {
   margin: 0;
   padding: 0 0 0 30px;
@@ -1320,6 +1327,17 @@ ul.nm-products-list li.nm-product {
 
 ul.nm-products-list li.nm-product.highlight, ul.nm-products-list li.nm-product:hover {
   color: #2dc850;
+}
+
+@media (max-width: 767px) {
+  ul.nm-products-list {
+    padding: 0;
+    border: none;
+  }
+  ul.nm-products-list li.nm-product {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
 }
 
 ul.nm-packages-list {
