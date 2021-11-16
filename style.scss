@@ -1727,11 +1727,6 @@ textarea {
 }
 
 .nm-timeline-mobile {
-  display: none;
-  @media (max-width: 811px) {
-    display: flex;
-    flex-direction: column;
-  }
   .nmt-mobile-event-heading {
     display: flex;
     align-items: flex-end;
