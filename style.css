@@ -1315,6 +1315,7 @@ h3.products-heading {
 }
 
 ul.nm-products-list {
+  display: inline-block;
   margin: 0;
   padding: 0 0 0 30px;
   border-left: solid 1px #000000;
@@ -1352,6 +1353,12 @@ ul.nm-packages-list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 767px) {
+  ul.nm-packages-list {
+    display: none;
+  }
 }
 
 ul.nm-packages-list li.nm-package {

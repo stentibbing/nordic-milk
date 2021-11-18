@@ -1217,6 +1217,7 @@ h3.products-heading {
 }
 
 ul.nm-products-list {
+  display: inline-block;
   margin: 0;
   padding: 0 0 0 30px;
   border-left: solid 1px $color-content;
@@ -1245,6 +1246,9 @@ ul.nm-packages-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  @media (max-width: 767px) {
+    display: none;
+  }
   & li.nm-package {
     display: flex;
     height: 42px;
