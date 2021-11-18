@@ -1396,7 +1396,7 @@ ul.nm-packages-list li.nm-package {
   display: -ms-flexbox;
   display: flex;
   height: 42px;
-  padding: 10px 30px;
+  padding: 10px 15px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
