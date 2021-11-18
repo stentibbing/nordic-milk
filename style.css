@@ -1329,6 +1329,10 @@ ul.nm-products-list li.nm-product.highlight, ul.nm-products-list li.nm-product:h
   color: #2dc850;
 }
 
+ul.nm-products-list li.nm-product.touch-highlight {
+  font-size: 1.5rem;
+}
+
 ul.nm-products-list li.nm-product ul.nm-product-list-package-list {
   display: none;
   list-style: none;

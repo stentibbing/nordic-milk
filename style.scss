@@ -1227,6 +1227,9 @@ ul.nm-products-list {
     &:hover {
       color: $color-highlight;
     }
+    &.touch-highlight {
+      font-size: 1.5rem;
+    }
     & ul.nm-product-list-package-list {
       display: none;
       list-style: none;
