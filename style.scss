@@ -1217,7 +1217,6 @@ h3.products-heading {
 }
 
 ul.nm-products-list {
-  display: inline-block;
   margin: 0;
   padding: 0 0 0 30px;
   border-left: solid 1px $color-content;
@@ -1228,6 +1227,10 @@ ul.nm-products-list {
     &:hover {
       color: $color-highlight;
     }
+    & ul.nm-product-list-package-list {
+      display: none;
+      list-style: none;
+    }
   }
   @media (max-width: 767px) {
     padding: 0;
@@ -1235,6 +1238,22 @@ ul.nm-products-list {
     & li.nm-product {
       font-size: 1.2rem;
       line-height: 2rem;
+      & ul.nm-product-list-package-list {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        height: 0;
+        margin: 0;
+        overflow: hidden;
+        color: $color-content;
+        & li.nm-product-list-package {
+          font: $font-content;
+        }
+        &.package-list-opened {
+          height: auto;
+          padding: 0 0 10px 10px;
+        }
+      }
     }
   }
 }
