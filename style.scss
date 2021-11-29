@@ -1442,7 +1442,9 @@ textarea {
 
 .nm-tabs-list.sustainable_future {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .nm-tab.sustainable_future {
