@@ -1448,31 +1448,23 @@ textarea {
 .nm-tab.sustainable_future {
   display: flex;
   align-items: flex-end;
-}
-
-.nm-tab.sustainable_future .nm-tab-icon {
-  width: 10px;
-  height: 10px;
-  margin: 0 5px 3px 0;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.nm-tab.sustainable_future h2 {
-  margin: 0;
-  color: $color-content;
-  font: $font-tabs;
-  line-height: 1;
-}
-
-
-.nm-tab.sustainable_future.active-tab h2 {
-  color: $color-highlight;
-}
-
-.nm-tab.sustainable_future.active-tab::before {
-  background-image: url(./img/link_icon_highlight.svg);
+  & > .nm-tab-icon {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px 3px 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  & > h2 {
+    margin: 0;
+    color: $color-content;
+    font: $font-tabs;
+    line-height: 1;
+  }
+  &.active-tab > h2 {
+    color: $color-highlight;
+  }
 }
 
 // --- Big Five initiative ---
@@ -1480,20 +1472,33 @@ textarea {
 .nm-tabs-list.big_five_initiative {
   display: flex;
   flex-direction: column;
-  & h2 {
-    font: $font-content;
-    font-size: 0.8rem;
-    font-weight: 700;
-    line-height: 1.2;
-  }
-}
-
-.big_five_initiative {
-  h3 {
-    margin: 50px 0 20px;
-    font-weight: 500;
-    &:first-of-type {
-      margin-top: 0;
+  margin: 0;
+  padding: 0;
+  & .nm-tab {
+    display: flex;
+    align-items: center;
+    & .nm-tab-icon {
+      width: 50px;
+      height: 50px;
+      margin-right: 5px;
+      display: block;
+    }
+    & h2 {
+      max-width: 70%;
+      font: $font-content;
+      font-size: 0.8rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    &.active-tab h2 {
+      color: $color-highlight;
+    }
+    h3 {
+      margin: 50px 0 20px;
+      font-weight: 500;
+      &:first-of-type {
+        margin-top: 0;
+      }
     }
   }
 }

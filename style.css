@@ -1682,7 +1682,7 @@ textarea {
           align-items: flex-end;
 }
 
-.nm-tab.sustainable_future .nm-tab-icon {
+.nm-tab.sustainable_future > .nm-tab-icon {
   width: 10px;
   height: 10px;
   margin: 0 5px 3px 0;
@@ -1691,19 +1691,15 @@ textarea {
   background-repeat: no-repeat;
 }
 
-.nm-tab.sustainable_future h2 {
+.nm-tab.sustainable_future > h2 {
   margin: 0;
   color: #000000;
   font: 600 1.5rem Bison, cursive;
   line-height: 1;
 }
 
-.nm-tab.sustainable_future.active-tab h2 {
+.nm-tab.sustainable_future.active-tab > h2 {
   color: #2dc850;
-}
-
-.nm-tab.sustainable_future.active-tab::before {
-  background-image: url(./img/link_icon_highlight.svg);
 }
 
 .nm-tabs-list.big_five_initiative {
@@ -1714,21 +1710,44 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
-.nm-tabs-list.big_five_initiative h2 {
+.nm-tabs-list.big_five_initiative .nm-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nm-tabs-list.big_five_initiative .nm-tab .nm-tab-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  display: block;
+}
+
+.nm-tabs-list.big_five_initiative .nm-tab h2 {
+  max-width: 70%;
   font: 300 1rem/1.5rem "Epilogue", sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
-.big_five_initiative h3 {
+.nm-tabs-list.big_five_initiative .nm-tab.active-tab h2 {
+  color: #2dc850;
+}
+
+.nm-tabs-list.big_five_initiative .nm-tab h3 {
   margin: 50px 0 20px;
   font-weight: 500;
 }
 
-.big_five_initiative h3:first-of-type {
+.nm-tabs-list.big_five_initiative .nm-tab h3:first-of-type {
   margin-top: 0;
 }
 
