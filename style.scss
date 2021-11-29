@@ -814,7 +814,7 @@ p {
   font: $font-content;
 }
 
-h2 {
+h1, h2 {
   font: $font-heading;
   @media (max-width: 992px) {
     font-size: 3rem;
@@ -1440,100 +1440,70 @@ textarea {
 
 // --- Sustainable Future ---
 
-.nm-sustainable-tabs.vc_tta-tabs.vc_tta-o-no-fill ul.vc_tta-tabs-list {
+.nm-tabs-list.sustainable_future {
   display: flex;
-  justify-content: space-between;
-  padding: 50px 0;
-  & li a {
-    padding: 0;
-    margin: 0;
-    background: transparent;
-    border: none;
-    & span {
-      color: $color-content;
-      font: $font-tabs;
-    }
-  }
-  & li.vc_active a span {
-    color: $color-highlight;
-  }
+  justify-content: space-evenly;
 }
 
-.vc_tta-panel-heading {
-  background-color: transparent !important;
+.nm-tab.sustainable_future {
+  display: flex;
+  align-items: flex-end;
 }
 
-.vc_tta-color-white.vc_tta-style-flat
-  .vc_tta-panel.vc_active
-  .vc_tta-panel-title
-  > a {
-  color: $color-highlight !important;
+.nm-tab.sustainable_future .nm-tab-icon {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px 3px 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.vc_tta-color-white.vc_tta-style-flat .vc_tta-panel .vc_tta-panel-title > a {
-  color: $color-content !important;
-}
-
-.vc_tta-panel-title {
+.nm-tab.sustainable_future h2 {
+  margin: 0;
   color: $color-content;
   font: $font-tabs;
+  line-height: 1;
 }
 
-// --- Big five initiative ---
 
-.big_five_initiative .elegant-expanding-section-description {
-  display: none;
+.nm-tab.sustainable_future.active-tab h2 {
+  color: $color-highlight;
+}
+
+.nm-tab.sustainable_future.active-tab::before {
+  background-image: url(./img/link_icon_highlight.svg);
+}
+
+// --- Big Five initiative ---
+
+.nm-tabs-list.big_five_initiative {
+  display: flex;
+  flex-direction: column;
+  & h2 {
+    font: $font-content;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
 }
 
 .big_five_initiative {
-  & .elegant-expanding-section-heading-wrapper::after {
-    content: "";
-    width: 70px;
-    height: 70px;
-  }
-  &
-    .elegant-expanding-logistics
-    .elegant-expanding-section-heading-wrapper::after {
+  & .vc_tta-tabs-list a[href="#logistics-and-manufacturing-efficiency"]::before {
     background-image: url(./img/logistics_icon.svg);
-    background-size: 100%;
   }
-  &
-    .elegant-expanding-supply-chain
-    .elegant-expanding-section-heading-wrapper::after {
+  & .vc_tta-tabs-list a[href="#supply-chain-management"]::before {
     background-image: url(./img/supply_icon.svg);
-    background-size: 100%;
   }
-  &
-    .elegant-expanding-by-plastics
-    .elegant-expanding-section-heading-wrapper::after {
+  & .vc_tta-tabs-list a[href="#goodbye-to-virgin-plastic"]::before {
     background-image: url(./img/no_plastic_icon.svg);
-    background-size: 100%;
+
   }
-  &
-    .elegant-expanding-functional-products
-    .elegant-expanding-section-heading-wrapper::after {
+  & .vc_tta-tabs-list a[href="#more-functional-products"]::before {
     background-image: url(./img/functional_icon.svg);
-    background-size: 100%;
   }
-  &
-    .elegant-expanding-food-wastage
-    .elegant-expanding-section-heading-wrapper::after {
+  & .vc_tta-tabs-list a[href="#no-food-wastage"]::before {
     background-image: url(./img/no_waste_icon.svg);
-    background-size: 100%;
-  }
-  & .elegant-expanding-section-title:hover {
-    color: $color-highlight;
-  }
-  &
-    .elegant-expanding-sections
-    .elegant-expanding-section-heading-area.active-section
-    .elegant-expanding-section-heading-wrapper
-    .elegant-expanding-section-title
-    h2 {
-    color: $color-highlight !important;
-  }
-  & .elegant-expanding-sections .elegant-expanding-section-content-area {
-    padding: 30px 30px 20px 70px;
   }
   h3 {
     margin: 50px 0 20px;
@@ -1541,9 +1511,6 @@ textarea {
     &:first-of-type {
       margin-top: 0;
     }
-  }
-  p {
-    margin: 16px 0 24px 35px;
   }
 }
 

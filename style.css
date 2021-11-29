@@ -785,12 +785,12 @@ p {
   font: 300 1rem/1.5rem "Epilogue", sans-serif;
 }
 
-h2 {
+h1, h2 {
   font: bold 5rem/4.4rem Bison, cursive;
 }
 
 @media (max-width: 992px) {
-  h2 {
+  h1, h2 {
     font-size: 3rem;
     line-height: 2.8rem;
   }
@@ -1710,60 +1710,83 @@ textarea {
   font: 600 1.5rem Bison, cursive;
 }
 
-.big_five_initiative .elegant-expanding-section-description {
-  display: none;
+.nm-tabs-list.sustainable_future {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.big_five_initiative .elegant-expanding-section-heading-wrapper::after {
-  content: "";
-  width: 70px;
-  height: 70px;
+.nm-tab.sustainable_future {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-.big_five_initiative .elegant-expanding-logistics
-.elegant-expanding-section-heading-wrapper::after {
-  background-image: url(./img/logistics_icon.svg);
-  background-size: 100%;
+.nm-tab.sustainable_future .nm-tab-icon {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px 3px 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.big_five_initiative .elegant-expanding-supply-chain
-.elegant-expanding-section-heading-wrapper::after {
-  background-image: url(./img/supply_icon.svg);
-  background-size: 100%;
+.nm-tab.sustainable_future h2 {
+  margin: 0;
+  color: #000000;
+  font: 600 1.5rem Bison, cursive;
+  line-height: 1;
 }
 
-.big_five_initiative .elegant-expanding-by-plastics
-.elegant-expanding-section-heading-wrapper::after {
-  background-image: url(./img/no_plastic_icon.svg);
-  background-size: 100%;
-}
-
-.big_five_initiative .elegant-expanding-functional-products
-.elegant-expanding-section-heading-wrapper::after {
-  background-image: url(./img/functional_icon.svg);
-  background-size: 100%;
-}
-
-.big_five_initiative .elegant-expanding-food-wastage
-.elegant-expanding-section-heading-wrapper::after {
-  background-image: url(./img/no_waste_icon.svg);
-  background-size: 100%;
-}
-
-.big_five_initiative .elegant-expanding-section-title:hover {
+.nm-tab.sustainable_future.active-tab h2 {
   color: #2dc850;
 }
 
-.big_five_initiative .elegant-expanding-sections
-.elegant-expanding-section-heading-area.active-section
-.elegant-expanding-section-heading-wrapper
-.elegant-expanding-section-title
-h2 {
-  color: #2dc850 !important;
+.nm-tab.sustainable_future.active-tab::before {
+  background-image: url(./img/link_icon_highlight.svg);
 }
 
-.big_five_initiative .elegant-expanding-sections .elegant-expanding-section-content-area {
-  padding: 30px 30px 20px 70px;
+.nm-tabs-list.big_five_initiative {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nm-tabs-list.big_five_initiative h2 {
+  font: 300 1rem/1.5rem "Epilogue", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.big_five_initiative .vc_tta-tabs-list a[href="#logistics-and-manufacturing-efficiency"]::before {
+  background-image: url(./img/logistics_icon.svg);
+}
+
+.big_five_initiative .vc_tta-tabs-list a[href="#supply-chain-management"]::before {
+  background-image: url(./img/supply_icon.svg);
+}
+
+.big_five_initiative .vc_tta-tabs-list a[href="#goodbye-to-virgin-plastic"]::before {
+  background-image: url(./img/no_plastic_icon.svg);
+}
+
+.big_five_initiative .vc_tta-tabs-list a[href="#more-functional-products"]::before {
+  background-image: url(./img/functional_icon.svg);
+}
+
+.big_five_initiative .vc_tta-tabs-list a[href="#no-food-wastage"]::before {
+  background-image: url(./img/no_waste_icon.svg);
 }
 
 .big_five_initiative h3 {
@@ -1773,10 +1796,6 @@ h2 {
 
 .big_five_initiative h3:first-of-type {
   margin-top: 0;
-}
-
-.big_five_initiative p {
-  margin: 16px 0 24px 35px;
 }
 
 .wpex-timeline > li:first-child:before,
