@@ -1664,52 +1664,6 @@ textarea {
   border: none;
 }
 
-.nm-sustainable-tabs.vc_tta-tabs.vc_tta-o-no-fill ul.vc_tta-tabs-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 50px 0;
-}
-
-.nm-sustainable-tabs.vc_tta-tabs.vc_tta-o-no-fill ul.vc_tta-tabs-list li a {
-  padding: 0;
-  margin: 0;
-  background: transparent;
-  border: none;
-}
-
-.nm-sustainable-tabs.vc_tta-tabs.vc_tta-o-no-fill ul.vc_tta-tabs-list li a span {
-  color: #000000;
-  font: 600 1.5rem Bison, cursive;
-}
-
-.nm-sustainable-tabs.vc_tta-tabs.vc_tta-o-no-fill ul.vc_tta-tabs-list li.vc_active a span {
-  color: #2dc850;
-}
-
-.vc_tta-panel-heading {
-  background-color: transparent !important;
-}
-
-.vc_tta-color-white.vc_tta-style-flat
-.vc_tta-panel.vc_active
-.vc_tta-panel-title
-> a {
-  color: #2dc850 !important;
-}
-
-.vc_tta-color-white.vc_tta-style-flat .vc_tta-panel .vc_tta-panel-title > a {
-  color: #000000 !important;
-}
-
-.vc_tta-panel-title {
-  color: #000000;
-  font: 600 1.5rem Bison, cursive;
-}
-
 .nm-tabs-list.sustainable_future {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1767,26 +1721,6 @@ textarea {
   font-size: 0.8rem;
   font-weight: 700;
   line-height: 1.2;
-}
-
-.big_five_initiative .vc_tta-tabs-list a[href="#logistics-and-manufacturing-efficiency"]::before {
-  background-image: url(./img/logistics_icon.svg);
-}
-
-.big_five_initiative .vc_tta-tabs-list a[href="#supply-chain-management"]::before {
-  background-image: url(./img/supply_icon.svg);
-}
-
-.big_five_initiative .vc_tta-tabs-list a[href="#goodbye-to-virgin-plastic"]::before {
-  background-image: url(./img/no_plastic_icon.svg);
-}
-
-.big_five_initiative .vc_tta-tabs-list a[href="#more-functional-products"]::before {
-  background-image: url(./img/functional_icon.svg);
-}
-
-.big_five_initiative .vc_tta-tabs-list a[href="#no-food-wastage"]::before {
-  background-image: url(./img/no_waste_icon.svg);
 }
 
 .big_five_initiative h3 {

@@ -1489,22 +1489,6 @@ textarea {
 }
 
 .big_five_initiative {
-  & .vc_tta-tabs-list a[href="#logistics-and-manufacturing-efficiency"]::before {
-    background-image: url(./img/logistics_icon.svg);
-  }
-  & .vc_tta-tabs-list a[href="#supply-chain-management"]::before {
-    background-image: url(./img/supply_icon.svg);
-  }
-  & .vc_tta-tabs-list a[href="#goodbye-to-virgin-plastic"]::before {
-    background-image: url(./img/no_plastic_icon.svg);
-
-  }
-  & .vc_tta-tabs-list a[href="#more-functional-products"]::before {
-    background-image: url(./img/functional_icon.svg);
-  }
-  & .vc_tta-tabs-list a[href="#no-food-wastage"]::before {
-    background-image: url(./img/no_waste_icon.svg);
-  }
   h3 {
     margin: 50px 0 20px;
     font-weight: 500;
