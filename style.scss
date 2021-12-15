@@ -1471,6 +1471,11 @@ textarea {
 
 // --- Big Five initiative ---
 
+.nm-tab-content.big_five_initiative h3 {
+  border-bottom: solid 1px #2dc850;
+  padding-bottom: 5px;
+}
+
 .nm-tabs-list.big_five_initiative {
   display: flex;
   flex-direction: column;
@@ -1487,6 +1492,7 @@ textarea {
     }
     & h2 {
       max-width: 70%;
+      color: #cccccc;
       font: $font-content;
       font-size: 0.8rem;
       font-weight: 700;
@@ -1494,13 +1500,6 @@ textarea {
     }
     &.active-tab h2 {
       color: $color-highlight;
-    }
-    h3 {
-      margin: 50px 0 20px;
-      font-weight: 500;
-      &:first-of-type {
-        margin-top: 0;
-      }
     }
   }
 }

@@ -1704,6 +1704,11 @@ textarea {
   color: #2dc850;
 }
 
+.nm-tab-content.big_five_initiative h3 {
+  border-bottom: solid 1px #2dc850;
+  padding-bottom: 5px;
+}
+
 .nm-tabs-list.big_five_initiative {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1734,6 +1739,7 @@ textarea {
 
 .nm-tabs-list.big_five_initiative .nm-tab h2 {
   max-width: 70%;
+  color: #cccccc;
   font: 300 1rem/1.5rem "Epilogue", sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
@@ -1742,15 +1748,6 @@ textarea {
 
 .nm-tabs-list.big_five_initiative .nm-tab.active-tab h2 {
   color: #2dc850;
-}
-
-.nm-tabs-list.big_five_initiative .nm-tab h3 {
-  margin: 50px 0 20px;
-  font-weight: 500;
-}
-
-.nm-tabs-list.big_five_initiative .nm-tab h3:first-of-type {
-  margin-top: 0;
 }
 
 .wpex-timeline > li:first-child:before,
